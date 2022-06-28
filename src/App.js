@@ -42,18 +42,23 @@ class App extends Component {
   return(
     <div className="App">
       <Navbar />
-      <form onSubmit = {this.handleSubmit}>
+      <h2 className = "form"> Add a new ToDo</h2>
+      <form  className = "form" onSubmit = {this.handleSubmit}>
       <label htmlFor = "task"> ToDo Task </label>
       <input type ="text" value ={this.state.task} onChange ={this.handleChange} id="task" />
       <br />
+      <br/>
       <label htmlFor = "details"> Task Details</label>
       <input type ="text" value ={this.state.details} onChange ={this.handleChange} id="details" />
       <br />
+      <br/>
       <label htmlFor = "completed"> Task Status </label>
       <input type ="text" value ={this.state.completed} onChange ={this.handleChange} id="completed" />
       <br/>
+      <br/>
       <label htmlFor = "createdAt"> Task Created At </label>
       <input type ="text" value ={this.state.createdAt} onChange ={this.handleChange} id="createdAt" />
+      <br/>
       <br/>
       <input type="submit" />
       </form>

@@ -2,10 +2,10 @@ const Navbar = () =>{
     return(
         <nav style ={styles.navStyle}>
            <h1> Todos App</h1>
-            <ul>
-                <li>Home</li>
-                <li>ToDos</li>
-                <li> About</li>
+            <ul style={styles.ulStyle}>
+                <p>Home</p>
+                <p>ToDos</p>
+                <p> About</p>
             </ul>
             
         </nav>
@@ -15,10 +15,14 @@ const Navbar = () =>{
 const styles = {
 
     navStyle :{
-        display :'flex',
-        justifyContent :'space-around',
-        border: 'solid blue 4px'
+        textAlign: 'center',
+        border: 'solid grey 4px'
 
-    }
+    },
+     ulStyle: {
+        display:'flex',
+        direction : 'column',
+        justifyContent : 'space-around'
+     }
 }
 export default Navbar
